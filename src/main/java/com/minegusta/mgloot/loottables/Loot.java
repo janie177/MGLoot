@@ -1,5 +1,6 @@
 package com.minegusta.mgloot.loottables;
 
+import com.google.common.collect.Lists;
 import com.minegusta.mgloot.util.DamageItem;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -19,7 +20,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Wooden Weapon");
@@ -37,7 +38,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Wooden Axe");
@@ -56,7 +57,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Stone Weapon");
@@ -74,7 +75,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Stone Woodcutting Axe");
@@ -92,7 +93,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Man Boots");
@@ -110,7 +111,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Leather Jacket");
@@ -128,7 +129,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Leather Cap");
@@ -146,7 +147,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Man Pants");
@@ -164,7 +165,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Ball Of Rubbish");
@@ -179,7 +180,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Weird Goo");
@@ -194,7 +195,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Bandage");
@@ -209,7 +210,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Empty Bottle");
@@ -224,7 +225,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Pointy Arrows");
@@ -239,7 +240,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Wooden Bow");
@@ -257,7 +258,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Empty Bowl");
@@ -272,7 +273,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Chain Boots");
@@ -290,7 +291,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Chain Helmet");
@@ -313,7 +314,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Slice of Water Melon");
@@ -328,7 +329,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Nommable Potato");
@@ -344,7 +345,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Tasty Carrot");
@@ -359,7 +360,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Bottled Water");
@@ -375,7 +376,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Raw Fish");
@@ -390,7 +391,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Raw Chicken Meat");
@@ -406,7 +407,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Cocoa Beans");
@@ -422,7 +423,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Grain");
@@ -437,7 +438,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Chocolate Chip Cookie");
@@ -453,7 +454,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Brown Mushroom");
@@ -469,7 +470,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Red Mushroom");
@@ -485,7 +486,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Rotting Flesh");
@@ -506,7 +507,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Stone Button");
@@ -522,7 +523,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Wooden Scythe");
@@ -540,7 +541,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Wooden Spade");
@@ -558,7 +559,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Wooden Stick");
@@ -574,7 +575,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Flint");
@@ -590,7 +591,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Feather");
@@ -606,7 +607,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Wooden Pickaxe");
@@ -628,7 +629,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Iron Sword");
@@ -646,7 +647,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Chain Chest");
@@ -664,7 +665,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Chain Pants");
@@ -682,7 +683,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Golden Shoes");
@@ -700,7 +701,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Golden Chest Plate");
@@ -718,7 +719,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Golden Helmet");
@@ -736,7 +737,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Golden Pants");
@@ -754,7 +755,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Wooden Bow");
@@ -772,7 +773,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Iron Helmet");
@@ -790,7 +791,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Iron Boots");
@@ -808,7 +809,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Pointy Arrows");
@@ -823,7 +824,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Chain Boots");
@@ -841,7 +842,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Chain Helmet");
@@ -863,7 +864,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Iron Sword");
@@ -881,7 +882,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Chain Chest");
@@ -899,7 +900,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Chain Pants");
@@ -917,7 +918,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Golden Shoes");
@@ -935,7 +936,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Golden Chest Plate");
@@ -953,7 +954,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Golden Helmet");
@@ -971,7 +972,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Golden Pants");
@@ -989,7 +990,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Wooden Bow");
@@ -1007,7 +1008,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Iron Helmet");
@@ -1025,7 +1026,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Iron Boots");
@@ -1043,7 +1044,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Pointy Arrows");
@@ -1058,7 +1059,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Chain Boots");
@@ -1076,7 +1077,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Iron Chest");
@@ -1094,7 +1095,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Iron Leggings");
@@ -1112,7 +1113,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             addEnchantment(Enchantment.DAMAGE_UNDEAD, 1);
@@ -1131,7 +1132,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             addEnchantment(Enchantment.DAMAGE_ALL, 2);
@@ -1150,7 +1151,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             addEnchantment(Enchantment.FIRE_ASPECT, 1);
@@ -1169,7 +1170,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             addEnchantment(Enchantment.KNOCKBACK, 1);
@@ -1188,7 +1189,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             addEnchantment(Enchantment.DURABILITY, 2);
@@ -1209,7 +1210,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Grenade");
@@ -1225,7 +1226,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             addEnchantment(Enchantment.ARROW_FIRE, 1);
@@ -1244,7 +1245,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             addEnchantment(Enchantment.ARROW_KNOCKBACK, 2);
@@ -1263,7 +1264,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Iron Ingot");
@@ -1279,7 +1280,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Chain Helmet");
@@ -1300,7 +1301,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Grenade");
@@ -1316,7 +1317,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             addEnchantment(Enchantment.ARROW_FIRE, 1);
@@ -1336,7 +1337,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             addEnchantment(Enchantment.ARROW_KNOCKBACK, 3);
@@ -1356,7 +1357,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             addEnchantment(Enchantment.DURABILITY, 2);
@@ -1377,7 +1378,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1);
@@ -1396,7 +1397,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1);
@@ -1415,7 +1416,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1);
@@ -1434,7 +1435,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             addEnchantment(Enchantment.PROTECTION_FALL, 1);
@@ -1453,7 +1454,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Shiny Diamond");
@@ -1469,7 +1470,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName(ChatColor.YELLOW + "Diamond Sword");
@@ -1488,7 +1489,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName("Potion of Healing");
@@ -1503,7 +1504,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName("Potion of Healing");
@@ -1518,7 +1519,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName("Potion of Healing");
@@ -1533,7 +1534,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName("Potion of Healing");
@@ -1548,7 +1549,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName("Potion of Healing");
@@ -1563,7 +1564,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName("Potion of Healing");
@@ -1578,7 +1579,7 @@ public class Loot
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
-                            List<String> lore = meta.getLore();
+                            List<String> lore = Lists.newArrayList();
 
                             // -------- Put specifications here
                             meta.setDisplayName("Potion of Healing");
