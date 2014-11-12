@@ -21,13 +21,15 @@ public class ChestListener implements Listener
     {
         if(!ConfigHandler.isInWorld(e.getPlayer().getWorld().getName()))return;
 
-        Block b = e.getClickedBlock();
-        Material m = b.getRelative(BlockFace.DOWN).getType();
-        Location l = e.getClickedBlock().getLocation();
+
         Player p = e.getPlayer();
 
-        if(e.hasBlock() && e.getClickedBlock().getType() == Material.CHEST && ConfigHandler.getChests().contains(StringLocConverter.locationToString(l)))
+        if(e.hasBlock() && e.getClickedBlock().getType() == Material.CHEST)
         {
+            Block b = e.getClickedBlock();
+            Material m = b.getRelative(BlockFace.DOWN).getType();
+            Location l = e.getClickedBlock().getLocation();
+
             if(p.isOp() && e.getPlayer().getItemInHand() != null && e.getPlayer().getItemInHand().getType().equals(Material.BLAZE_ROD))
             {
                 boolean enabled = ConfigHandler.toggleChest(l);
@@ -40,7 +42,7 @@ public class ChestListener implements Listener
                     p.sendMessage(ChatColor.GREEN + "You have " + ChatColor.DARK_RED + "UNREGISTERED" + ChatColor.GREEN + " this chest.");
                 }
 
-            } else {
+            } else if(ConfigHandler.getChests().contains(StringLocConverter.locationToString(l))){
 
                 int maxAmount;
                 ItemStack[] table;
