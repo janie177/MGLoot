@@ -16,7 +16,7 @@ import org.bukkit.inventory.ItemStack;
 
 public class ChestListener implements Listener
 {
-    @EventHandler(priority = EventPriority.MONITOR)
+    @EventHandler(priority = EventPriority.LOWEST)
     public void onEvent(PlayerInteractEvent e)
     {
         if(!ConfigHandler.isInWorld(e.getPlayer().getWorld().getName()))return;

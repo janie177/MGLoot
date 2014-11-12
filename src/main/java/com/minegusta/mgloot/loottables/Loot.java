@@ -13,298 +13,298 @@ public class Loot
 {
 
     public static final ItemStack[] defaultLoot =
-        {
+            {
 
-                new ItemStack(Material.WOOD_SWORD, 1)
-                {
+                    new ItemStack(Material.WOOD_SWORD, 1)
                     {
-                        //The meta and lore
-                        ItemMeta meta = getItemMeta();
-                        List<String> lore = meta.getLore();
+                        {
+                            //The meta and lore
+                            ItemMeta meta = getItemMeta();
+                            List<String> lore = meta.getLore();
 
-                        // -------- Put specifications here
-                        meta.setDisplayName(ChatColor.YELLOW + "Wooden Weapon");
-                        lore.add(ChatColor.GREEN + "Good for poking zombies.");
-                        //Only for items that can be damaged
-                        setDurability(DamageItem.damage(getDurability()));
+                            // -------- Put specifications here
+                            meta.setDisplayName(ChatColor.YELLOW + "Wooden Weapon");
+                            lore.add(ChatColor.GREEN + "Good for poking zombies.");
+                            //Only for items that can be damaged
+                            setDurability(DamageItem.damage(getDurability()));
 
-                        //Set the meta
-                        meta.setLore(lore);
-                        setItemMeta(meta);
-                    }
-                },
-                new ItemStack(Material.WOOD_AXE, 1)
-                {
+                            //Set the meta
+                            meta.setLore(lore);
+                            setItemMeta(meta);
+                        }
+                    },
+                    new ItemStack(Material.WOOD_AXE, 1)
                     {
-                        //The meta and lore
-                        ItemMeta meta = getItemMeta();
-                        List<String> lore = meta.getLore();
+                        {
+                            //The meta and lore
+                            ItemMeta meta = getItemMeta();
+                            List<String> lore = meta.getLore();
 
-                        // -------- Put specifications here
-                        meta.setDisplayName(ChatColor.YELLOW + "Wooden Axe");
-                        lore.add(ChatColor.GREEN + "What genius ever came up with");
-                        lore.add(ChatColor.GREEN + "the idea to chop wood with wood..");
-                        //Only for items that can be damaged
-                        setDurability(DamageItem.damage(getDurability()));
+                            // -------- Put specifications here
+                            meta.setDisplayName(ChatColor.YELLOW + "Wooden Axe");
+                            lore.add(ChatColor.GREEN + "What genius ever came up with");
+                            lore.add(ChatColor.GREEN + "the idea to chop wood with wood..");
+                            //Only for items that can be damaged
+                            setDurability(DamageItem.damage(getDurability()));
 
-                        //Set the meta
-                        meta.setLore(lore);
-                        setItemMeta(meta);
-                    }
-                },
-                new ItemStack(Material.STONE_SWORD, 1)
-                {
+                            //Set the meta
+                            meta.setLore(lore);
+                            setItemMeta(meta);
+                        }
+                    },
+                    new ItemStack(Material.STONE_SWORD, 1)
                     {
-                        //The meta and lore
-                        ItemMeta meta = getItemMeta();
-                        List<String> lore = meta.getLore();
+                        {
+                            //The meta and lore
+                            ItemMeta meta = getItemMeta();
+                            List<String> lore = meta.getLore();
 
-                        // -------- Put specifications here
-                        meta.setDisplayName(ChatColor.YELLOW + "Stone Weapon");
-                        lore.add(ChatColor.GREEN + "It's better than wood I guess..");
-                        //Only for items that can be damaged
-                        setDurability(DamageItem.damage(getDurability()));
+                            // -------- Put specifications here
+                            meta.setDisplayName(ChatColor.YELLOW + "Stone Weapon");
+                            lore.add(ChatColor.GREEN + "It's better than wood I guess..");
+                            //Only for items that can be damaged
+                            setDurability(DamageItem.damage(getDurability()));
 
-                        //Set the meta
-                        meta.setLore(lore);
-                        setItemMeta(meta);
-                    }
-                },
-                new ItemStack(Material.STONE_AXE, 1)
-                {
+                            //Set the meta
+                            meta.setLore(lore);
+                            setItemMeta(meta);
+                        }
+                    },
+                    new ItemStack(Material.STONE_AXE, 1)
                     {
-                        //The meta and lore
-                        ItemMeta meta = getItemMeta();
-                        List<String> lore = meta.getLore();
+                        {
+                            //The meta and lore
+                            ItemMeta meta = getItemMeta();
+                            List<String> lore = meta.getLore();
 
-                        // -------- Put specifications here
-                        meta.setDisplayName(ChatColor.YELLOW + "Stone Woodcutting Axe");
-                        lore.add(ChatColor.GREEN + "May I axe you a question?");
-                        //Only for items that can be damaged
-                        setDurability(DamageItem.damage(getDurability()));
+                            // -------- Put specifications here
+                            meta.setDisplayName(ChatColor.YELLOW + "Stone Woodcutting Axe");
+                            lore.add(ChatColor.GREEN + "May I axe you a question?");
+                            //Only for items that can be damaged
+                            setDurability(DamageItem.damage(getDurability()));
 
-                        //Set the meta
-                        meta.setLore(lore);
-                        setItemMeta(meta);
-                    }
-                },
-                new ItemStack(Material.LEATHER_BOOTS, 1)
-                {
+                            //Set the meta
+                            meta.setLore(lore);
+                            setItemMeta(meta);
+                        }
+                    },
+                    new ItemStack(Material.LEATHER_BOOTS, 1)
                     {
-                        //The meta and lore
-                        ItemMeta meta = getItemMeta();
-                        List<String> lore = meta.getLore();
+                        {
+                            //The meta and lore
+                            ItemMeta meta = getItemMeta();
+                            List<String> lore = meta.getLore();
 
-                        // -------- Put specifications here
-                        meta.setDisplayName(ChatColor.YELLOW + "Man Boots");
-                        lore.add(ChatColor.GREEN + "Expensive tacky Italian leather shoes.");
-                        //Only for items that can be damaged
-                        setDurability(DamageItem.damage(getDurability()));
+                            // -------- Put specifications here
+                            meta.setDisplayName(ChatColor.YELLOW + "Man Boots");
+                            lore.add(ChatColor.GREEN + "Expensive tacky Italian leather shoes.");
+                            //Only for items that can be damaged
+                            setDurability(DamageItem.damage(getDurability()));
 
-                        //Set the meta
-                        meta.setLore(lore);
-                        setItemMeta(meta);
-                    }
-                },
-                new ItemStack(Material.LEATHER_CHESTPLATE, 1)
-                {
+                            //Set the meta
+                            meta.setLore(lore);
+                            setItemMeta(meta);
+                        }
+                    },
+                    new ItemStack(Material.LEATHER_CHESTPLATE, 1)
                     {
-                        //The meta and lore
-                        ItemMeta meta = getItemMeta();
-                        List<String> lore = meta.getLore();
+                        {
+                            //The meta and lore
+                            ItemMeta meta = getItemMeta();
+                            List<String> lore = meta.getLore();
 
-                        // -------- Put specifications here
-                        meta.setDisplayName(ChatColor.YELLOW + "Leather Jacket");
-                        lore.add(ChatColor.GREEN + "Better not show this to any vegans.");
-                        //Only for items that can be damaged
-                        setDurability(DamageItem.damage(getDurability()));
+                            // -------- Put specifications here
+                            meta.setDisplayName(ChatColor.YELLOW + "Leather Jacket");
+                            lore.add(ChatColor.GREEN + "Better not show this to any vegans.");
+                            //Only for items that can be damaged
+                            setDurability(DamageItem.damage(getDurability()));
 
-                        //Set the meta
-                        meta.setLore(lore);
-                        setItemMeta(meta);
-                    }
-                },
-                new ItemStack(Material.LEATHER_HELMET, 1)
-                {
+                            //Set the meta
+                            meta.setLore(lore);
+                            setItemMeta(meta);
+                        }
+                    },
+                    new ItemStack(Material.LEATHER_HELMET, 1)
                     {
-                        //The meta and lore
-                        ItemMeta meta = getItemMeta();
-                        List<String> lore = meta.getLore();
+                        {
+                            //The meta and lore
+                            ItemMeta meta = getItemMeta();
+                            List<String> lore = meta.getLore();
 
-                        // -------- Put specifications here
-                        meta.setDisplayName(ChatColor.YELLOW + "Leather Cap");
-                        lore.add(ChatColor.GREEN + "Good for hiding your tacky hair.");
-                        //Only for items that can be damaged
-                        setDurability(DamageItem.damage(getDurability()));
+                            // -------- Put specifications here
+                            meta.setDisplayName(ChatColor.YELLOW + "Leather Cap");
+                            lore.add(ChatColor.GREEN + "Good for hiding your tacky hair.");
+                            //Only for items that can be damaged
+                            setDurability(DamageItem.damage(getDurability()));
 
-                        //Set the meta
-                        meta.setLore(lore);
-                        setItemMeta(meta);
-                    }
-                },
-                new ItemStack(Material.LEATHER_LEGGINGS, 1)
-                {
+                            //Set the meta
+                            meta.setLore(lore);
+                            setItemMeta(meta);
+                        }
+                    },
+                    new ItemStack(Material.LEATHER_LEGGINGS, 1)
                     {
-                        //The meta and lore
-                        ItemMeta meta = getItemMeta();
-                        List<String> lore = meta.getLore();
+                        {
+                            //The meta and lore
+                            ItemMeta meta = getItemMeta();
+                            List<String> lore = meta.getLore();
 
-                        // -------- Put specifications here
-                        meta.setDisplayName(ChatColor.YELLOW + "Man Pants");
-                        lore.add(ChatColor.GREEN + "False! Real men wear no pants.");
-                        //Only for items that can be damaged
-                        setDurability(DamageItem.damage(getDurability()));
+                            // -------- Put specifications here
+                            meta.setDisplayName(ChatColor.YELLOW + "Man Pants");
+                            lore.add(ChatColor.GREEN + "False! Real men wear no pants.");
+                            //Only for items that can be damaged
+                            setDurability(DamageItem.damage(getDurability()));
 
-                        //Set the meta
-                        meta.setLore(lore);
-                        setItemMeta(meta);
-                    }
-                },
-                new ItemStack(Material.SNOW_BALL, 1)
-                {
+                            //Set the meta
+                            meta.setLore(lore);
+                            setItemMeta(meta);
+                        }
+                    },
+                    new ItemStack(Material.SNOW_BALL, 1)
                     {
-                        //The meta and lore
-                        ItemMeta meta = getItemMeta();
-                        List<String> lore = meta.getLore();
+                        {
+                            //The meta and lore
+                            ItemMeta meta = getItemMeta();
+                            List<String> lore = meta.getLore();
 
-                        // -------- Put specifications here
-                        meta.setDisplayName(ChatColor.YELLOW + "Ball Of Rubbish");
-                        lore.add(ChatColor.GREEN + "A dirty throwable ball.");
-                        //Set the meta
-                        meta.setLore(lore);
-                        setItemMeta(meta);
-                    }
-                },
-                new ItemStack(Material.SLIME_BALL, 1)
-                {
+                            // -------- Put specifications here
+                            meta.setDisplayName(ChatColor.YELLOW + "Ball Of Rubbish");
+                            lore.add(ChatColor.GREEN + "A dirty throwable ball.");
+                            //Set the meta
+                            meta.setLore(lore);
+                            setItemMeta(meta);
+                        }
+                    },
+                    new ItemStack(Material.SLIME_BALL, 1)
                     {
-                        //The meta and lore
-                        ItemMeta meta = getItemMeta();
-                        List<String> lore = meta.getLore();
+                        {
+                            //The meta and lore
+                            ItemMeta meta = getItemMeta();
+                            List<String> lore = meta.getLore();
 
-                        // -------- Put specifications here
-                        meta.setDisplayName(ChatColor.YELLOW + "Weird Goo");
-                        lore.add(ChatColor.GREEN + "You don't want to know where this came from.");
-                        //Set the meta
-                        meta.setLore(lore);
-                        setItemMeta(meta);
-                    }
-                },
-                new ItemStack(Material.PAPER, 1)
-                {
+                            // -------- Put specifications here
+                            meta.setDisplayName(ChatColor.YELLOW + "Weird Goo");
+                            lore.add(ChatColor.GREEN + "You don't want to know where this came from.");
+                            //Set the meta
+                            meta.setLore(lore);
+                            setItemMeta(meta);
+                        }
+                    },
+                    new ItemStack(Material.PAPER, 1)
                     {
-                        //The meta and lore
-                        ItemMeta meta = getItemMeta();
-                        List<String> lore = meta.getLore();
+                        {
+                            //The meta and lore
+                            ItemMeta meta = getItemMeta();
+                            List<String> lore = meta.getLore();
 
-                        // -------- Put specifications here
-                        meta.setDisplayName(ChatColor.YELLOW + "Bandage");
-                        lore.add(ChatColor.GREEN + "Right click to heal yourself or others.");
-                        //Set the meta
-                        meta.setLore(lore);
-                        setItemMeta(meta);
-                    }
-                },
-                new ItemStack(Material.GLASS_BOTTLE, 1)
-                {
+                            // -------- Put specifications here
+                            meta.setDisplayName(ChatColor.YELLOW + "Bandage");
+                            lore.add(ChatColor.GREEN + "Right click to heal yourself or others.");
+                            //Set the meta
+                            meta.setLore(lore);
+                            setItemMeta(meta);
+                        }
+                    },
+                    new ItemStack(Material.GLASS_BOTTLE, 1)
                     {
-                        //The meta and lore
-                        ItemMeta meta = getItemMeta();
-                        List<String> lore = meta.getLore();
+                        {
+                            //The meta and lore
+                            ItemMeta meta = getItemMeta();
+                            List<String> lore = meta.getLore();
 
-                        // -------- Put specifications here
-                        meta.setDisplayName(ChatColor.YELLOW + "Empty Bottle");
-                        lore.add(ChatColor.GREEN + "Maybe you should fill this. You know, just in case.");
-                        //Set the meta
-                        meta.setLore(lore);
-                        setItemMeta(meta);
-                    }
-                },
-                new ItemStack(Material.ARROW, 2)
-                {
+                            // -------- Put specifications here
+                            meta.setDisplayName(ChatColor.YELLOW + "Empty Bottle");
+                            lore.add(ChatColor.GREEN + "Maybe you should fill this. You know, just in case.");
+                            //Set the meta
+                            meta.setLore(lore);
+                            setItemMeta(meta);
+                        }
+                    },
+                    new ItemStack(Material.ARROW, 2)
                     {
-                        //The meta and lore
-                        ItemMeta meta = getItemMeta();
-                        List<String> lore = meta.getLore();
+                        {
+                            //The meta and lore
+                            ItemMeta meta = getItemMeta();
+                            List<String> lore = meta.getLore();
 
-                        // -------- Put specifications here
-                        meta.setDisplayName(ChatColor.YELLOW + "Pointy Arrows");
-                        lore.add(ChatColor.GREEN + "Pointy Shooty! To be used with a bow.");
-                        //Set the meta
-                        meta.setLore(lore);
-                        setItemMeta(meta);
-                    }
-                },
-                new ItemStack(Material.BOW, 1)
-                {
+                            // -------- Put specifications here
+                            meta.setDisplayName(ChatColor.YELLOW + "Pointy Arrows");
+                            lore.add(ChatColor.GREEN + "Pointy Shooty! To be used with a bow.");
+                            //Set the meta
+                            meta.setLore(lore);
+                            setItemMeta(meta);
+                        }
+                    },
+                    new ItemStack(Material.BOW, 1)
                     {
-                        //The meta and lore
-                        ItemMeta meta = getItemMeta();
-                        List<String> lore = meta.getLore();
+                        {
+                            //The meta and lore
+                            ItemMeta meta = getItemMeta();
+                            List<String> lore = meta.getLore();
 
-                        // -------- Put specifications here
-                        meta.setDisplayName(ChatColor.YELLOW + "Wooden Bow");
-                        lore.add(ChatColor.GREEN + "An archer's first choice.");
-                        //Only for items that can be damaged
-                        setDurability(DamageItem.damage(getDurability()));
+                            // -------- Put specifications here
+                            meta.setDisplayName(ChatColor.YELLOW + "Wooden Bow");
+                            lore.add(ChatColor.GREEN + "An archer's first choice.");
+                            //Only for items that can be damaged
+                            setDurability(DamageItem.damage(getDurability()));
 
-                        //Set the meta
-                        meta.setLore(lore);
-                        setItemMeta(meta);
-                    }
-                },
-                new ItemStack(Material.BOWL, 1)
-                {
+                            //Set the meta
+                            meta.setLore(lore);
+                            setItemMeta(meta);
+                        }
+                    },
+                    new ItemStack(Material.BOWL, 1)
                     {
-                        //The meta and lore
-                        ItemMeta meta = getItemMeta();
-                        List<String> lore = meta.getLore();
+                        {
+                            //The meta and lore
+                            ItemMeta meta = getItemMeta();
+                            List<String> lore = meta.getLore();
 
-                        // -------- Put specifications here
-                        meta.setDisplayName(ChatColor.YELLOW + "Empty Bowl");
-                        lore.add(ChatColor.GREEN + "Even emptier than your food bar.");
-                        //Set the meta
-                        meta.setLore(lore);
-                        setItemMeta(meta);
-                    }
-                },
-                new ItemStack(Material.CHAINMAIL_BOOTS, 1)
-                {
+                            // -------- Put specifications here
+                            meta.setDisplayName(ChatColor.YELLOW + "Empty Bowl");
+                            lore.add(ChatColor.GREEN + "Even emptier than your food bar.");
+                            //Set the meta
+                            meta.setLore(lore);
+                            setItemMeta(meta);
+                        }
+                    },
+                    new ItemStack(Material.CHAINMAIL_BOOTS, 1)
                     {
-                        //The meta and lore
-                        ItemMeta meta = getItemMeta();
-                        List<String> lore = meta.getLore();
+                        {
+                            //The meta and lore
+                            ItemMeta meta = getItemMeta();
+                            List<String> lore = meta.getLore();
 
-                        // -------- Put specifications here
-                        meta.setDisplayName(ChatColor.YELLOW + "Chain Boots");
-                        lore.add(ChatColor.GREEN + "I wonder how they made shoes out of this stuff.");
-                        //Only for items that can be damaged
-                        setDurability(DamageItem.damage(getDurability()));
+                            // -------- Put specifications here
+                            meta.setDisplayName(ChatColor.YELLOW + "Chain Boots");
+                            lore.add(ChatColor.GREEN + "I wonder how they made shoes out of this stuff.");
+                            //Only for items that can be damaged
+                            setDurability(DamageItem.damage(getDurability()));
 
-                        //Set the meta
-                        meta.setLore(lore);
-                        setItemMeta(meta);
-                    }
-                },
-                new ItemStack(Material.CHAINMAIL_HELMET, 1)
-                {
+                            //Set the meta
+                            meta.setLore(lore);
+                            setItemMeta(meta);
+                        }
+                    },
+                    new ItemStack(Material.CHAINMAIL_HELMET, 1)
                     {
-                        //The meta and lore
-                        ItemMeta meta = getItemMeta();
-                        List<String> lore = meta.getLore();
+                        {
+                            //The meta and lore
+                            ItemMeta meta = getItemMeta();
+                            List<String> lore = meta.getLore();
 
-                        // -------- Put specifications here
-                        meta.setDisplayName(ChatColor.YELLOW + "Chain Helmet");
-                        lore.add(ChatColor.GREEN + "Your hair is still tacky.");
-                        //Only for items that can be damaged
-                        setDurability(DamageItem.damage(getDurability()));
+                            // -------- Put specifications here
+                            meta.setDisplayName(ChatColor.YELLOW + "Chain Helmet");
+                            lore.add(ChatColor.GREEN + "Your hair is still tacky.");
+                            //Only for items that can be damaged
+                            setDurability(DamageItem.damage(getDurability()));
 
-                        //Set the meta
-                        meta.setLore(lore);
-                        setItemMeta(meta);
+                            //Set the meta
+                            meta.setLore(lore);
+                            setItemMeta(meta);
+                        }
                     }
-                }
-        };
+            };
 
     public static final ItemStack[] foodLoot =
             {
