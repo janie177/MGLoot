@@ -11,8 +11,7 @@ import java.util.List;
 
 public class Loot
 {
-
-    public static final ItemStack[] defaultLoot =
+    public static ItemStack[] defaultLoot =
             {
 
                     new ItemStack(Material.WOOD_SWORD, 1)
@@ -306,7 +305,7 @@ public class Loot
                     }
             };
 
-    public static final ItemStack[] foodLoot =
+    public static ItemStack[] foodLoot =
             {
 
                     new ItemStack(Material.MELON, 1)
@@ -499,7 +498,7 @@ public class Loot
                     }
             };
 
-    public static final ItemStack[] toolLoot =
+    public static ItemStack[] toolLoot =
             {
 
                     new ItemStack(Material.STONE_BUTTON, 1)
@@ -621,7 +620,7 @@ public class Loot
                         }
                     },
             };
-    public static final ItemStack[] normalLoot =
+    public static ItemStack[] normalLoot =
             {
 
                     new ItemStack(Material.IRON_SWORD, 1)
@@ -856,7 +855,7 @@ public class Loot
                         }
                     }
             };
-    public static final ItemStack[] goodLoot =
+    public static ItemStack[] goodLoot =
             {
 
                     new ItemStack(Material.IRON_SWORD, 1)
@@ -1294,7 +1293,7 @@ public class Loot
                         }
                     }
             };
-    public static final ItemStack[] ultraLoot =
+    public static ItemStack[] ultraLoot =
             {
                     new ItemStack(Material.ENDER_PEARL, 1)
                     {
@@ -1482,11 +1481,10 @@ public class Loot
                         }
                     },
             };
-    public static final ItemStack[] healingLoot =
+    public static ItemStack[] healingLoot =
             {
 
-                    new ItemStack(Material.POTION, 1, (short) 8197)
-                    {
+                    new ItemStack(Material.POTION, 1, (short) 8197) {
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
@@ -1501,8 +1499,7 @@ public class Loot
                             setItemMeta(meta);
                         }
                     },
-                    new ItemStack(Material.POTION, 1, (short) 8229)
-                    {
+                    new ItemStack(Material.POTION, 1, (short) 8229) {
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
@@ -1517,8 +1514,7 @@ public class Loot
                             setItemMeta(meta);
                         }
                     },
-                    new ItemStack(Material.POTION, 1, (short) 16389)
-                    {
+                    new ItemStack(Material.POTION, 1, (short) 16389) {
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
@@ -1533,8 +1529,7 @@ public class Loot
                             setItemMeta(meta);
                         }
                     },
-                    new ItemStack(Material.POTION, 1, (short) 16421)
-                    {
+                    new ItemStack(Material.POTION, 1, (short) 16421) {
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
@@ -1549,8 +1544,7 @@ public class Loot
                             setItemMeta(meta);
                         }
                     },
-                    new ItemStack(Material.POTION, 1, (short) 8193)
-                    {
+                    new ItemStack(Material.POTION, 1, (short) 8193) {
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
@@ -1565,8 +1559,7 @@ public class Loot
                             setItemMeta(meta);
                         }
                     },
-                    new ItemStack(Material.POTION, 1, (short) 16385)
-                    {
+                    new ItemStack(Material.POTION, 1, (short) 16385) {
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
@@ -1581,8 +1574,7 @@ public class Loot
                             setItemMeta(meta);
                         }
                     },
-                    new ItemStack(Material.POTION, 1, (short) 8225)
-                    {
+                    new ItemStack(Material.POTION, 1, (short) 8225) {
                         {
                             //The meta and lore
                             ItemMeta meta = getItemMeta();
