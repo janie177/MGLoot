@@ -107,6 +107,7 @@ public class ChestListener implements Listener
                 //Start a chest respawn timer
                 ChestRespawn respawn = new ChestRespawn(l, respawnTime);
                 respawn.startRespawn();
+                e.setCancelled(true);
             }
         }
     }
