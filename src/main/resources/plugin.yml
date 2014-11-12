@@ -1,0 +1,4 @@
+name: MGLoot
+author: janie177
+version: ${project.version}
+main: com.minegusta.mgloot.Main

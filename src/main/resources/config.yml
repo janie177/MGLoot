@@ -1,0 +1,11 @@
+##Nothing = default loot.
+##Iron = Better loot.
+##Emerald = Good loot.
+##Hay = Food loot.
+##Clay = tool loot.
+##Diamond = ultra loot.
+##RedstoneBlock = Healing loot.
+##List of chests ingame: Please do not edit this in here because it will overwrite it anyways.
+enabled_worlds:
+  - 'wasteland'
+chests:
