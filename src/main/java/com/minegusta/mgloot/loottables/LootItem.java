@@ -140,7 +140,7 @@ public enum LootItem
                 }
                 if(durability)
                 {
-                    setDurability(DamageItem.damage(getDurability()));
+                    setDurability(DamageItem.damage(getType().getMaxDurability()));
                 }
             }
         };
