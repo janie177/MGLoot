@@ -29,6 +29,7 @@ public class Loot {
             LootItem.POTATO,
             LootItem.CARROT,
             LootItem.WATERBOTTLE,
+            LootItem.MILK,
             LootItem.FISH,
             LootItem.CHICKEN,
             LootItem.CHOCOLATE,

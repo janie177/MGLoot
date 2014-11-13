@@ -46,6 +46,7 @@ public enum LootItem
     BROWNMUSHROOM(Material.BROWN_MUSHROOM, 1, (short) 0, "Looks, smells and tastes like dirt." , "Brown Shroom", false),
     CHOCOLATE(Material.INK_SACK, 1, (short) 3, "Use this to make delicious cookies!" , "Chocolate Powder", false),
     CHICKEN(Material.RAW_CHICKEN, 1, (short) 0, "You can smell the salmonella.." , "Uncooked Chicken Meat", false),
+    MILK(Material.MILK_BUCKET, 1, (short) 0, "Healthy fresh milk. Nom!" , "Fresh Milk", false),
     FISH(Material.RAW_FISH, 1, (short) 0, "Something's fishy." , "Fish.", false),
     WATERBOTTLE(Material.POTION, 1, (short) 0, "A bottle of water, good for drinking." , "Bottle Of Water", false),
     GRAIN(Material.WHEAT, 1, (short) 0, "Can be used to cook various foods." , "Grain", false),
