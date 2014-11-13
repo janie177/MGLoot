@@ -48,6 +48,7 @@ public class ChestRespawn
                 players = true;
             }
         }
+        temp.remove();
         return players;
     }
 }

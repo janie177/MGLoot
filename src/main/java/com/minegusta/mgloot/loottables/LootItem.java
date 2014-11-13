@@ -137,6 +137,7 @@ public enum LootItem
                         addEnchantment(Enchantment.getById(i[0]), i[1]);
                     }
                 }
+                setItemMeta(meta);
             }
         };
     }
