@@ -1,6 +1,8 @@
 package com.minegusta.mgloot.chests;
 
+import com.minegusta.mgloot.Main;
 import com.minegusta.mgloot.configfiles.ConfigHandler;
+import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
 
@@ -8,9 +10,14 @@ public class RespawnOnStart
 {
     public static void respawn()
     {
-        for(Location l : ConfigHandler.getChestLocations())
-        {
-            l.getBlock().setType(Material.CHEST);
-        }
+        Bukkit.getScheduler().scheduleSyncDelayedTask(Main.PLUGIN, new Runnable() {
+            @Override
+            public void run() {
+                for(Location l : ConfigHandler.getChestLocations())
+                {
+                    l.getBlock().setType(Material.CHEST);
+                }
+            }
+        }, 20 * 30);
     }
 }
