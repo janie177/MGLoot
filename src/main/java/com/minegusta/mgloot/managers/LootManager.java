@@ -1,5 +1,6 @@
 package com.minegusta.mgloot.managers;
 
+import com.minegusta.mgloot.loottables.LootItem;
 import com.minegusta.mgloot.util.RandomNumber;
 import org.bukkit.inventory.ItemStack;
 
@@ -7,9 +8,9 @@ public class LootManager
 {
     private int maxAmount;
     private ItemStack[] loot;
-    private ItemStack[] table;
+    private LootItem[] table;
 
-    public LootManager(ItemStack[] table, int maxAmount)
+    public LootManager(LootItem[] table, int maxAmount)
     {
         this.table = table;
         this.maxAmount = maxAmount;
@@ -27,7 +28,7 @@ public class LootManager
         //Get the loot
         for(int i = 0; i < amount; i++)
         {
-            loot[i] = table[RandomNumber.get(table.length) - 1];
+            loot[i] = table[RandomNumber.get(table.length) - 1].build();
         }
     }
 

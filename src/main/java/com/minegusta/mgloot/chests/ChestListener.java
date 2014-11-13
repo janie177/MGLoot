@@ -2,6 +2,7 @@ package com.minegusta.mgloot.chests;
 
 import com.minegusta.mgloot.configfiles.ConfigHandler;
 import com.minegusta.mgloot.loottables.Loot;
+import com.minegusta.mgloot.loottables.LootItem;
 import com.minegusta.mgloot.managers.LootManager;
 import com.minegusta.mgloot.util.StringLocConverter;
 import org.bukkit.*;
@@ -45,7 +46,7 @@ public class ChestListener implements Listener
             } else if(ConfigHandler.getChests().contains(StringLocConverter.locationToString(l))){
 
                 int maxAmount;
-                ItemStack[] table;
+                LootItem[] table;
                 //In seconds is multiplied later.
                 int respawnTime;
 
