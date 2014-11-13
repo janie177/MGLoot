@@ -11,7 +11,7 @@ public class DamageItem
     public static short damage(short s)
     {
         int start = (int) s;
-        int end = (start / 10) * RandomNumber.get(1, 7);
+        int end = (start / 10) * RandomNumber.get(3, 7);
         return (short) end;
     }
 }
