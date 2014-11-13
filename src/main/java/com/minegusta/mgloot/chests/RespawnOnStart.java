@@ -10,7 +10,7 @@ public class RespawnOnStart
     {
         for(Location l : ConfigHandler.getChestLocations())
         {
-            l.getWorld().getBlockAt(l).setType(Material.CHEST);
+            l.getBlock().setType(Material.CHEST);
         }
     }
 }
