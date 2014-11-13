@@ -8,6 +8,8 @@ public class DamageItem
      */
     public static short damage(short s)
     {
-        return (short) (s - (s / RandomNumber.get(2, 6)));
+        int start = (int) s;
+        int end = (start / 10) * RandomNumber.get(3, 8);
+        return (short) end;
     }
 }

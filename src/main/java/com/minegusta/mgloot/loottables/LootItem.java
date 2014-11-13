@@ -2,6 +2,7 @@ package com.minegusta.mgloot.loottables;
 
 import com.google.common.collect.Lists;
 import com.minegusta.mgloot.util.DamageItem;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
@@ -129,7 +130,7 @@ public enum LootItem
                 List<String> newLore = Lists.newArrayList();
                 newLore.add(ChatColor.GREEN + lore);
                 meta.setLore(newLore);
-                if(durability) setDurability(DamageItem.damage(getDurability()));
+                setItemMeta(meta);
                 if(enchantments != null)
                 {
                     for(int[] i : enchantments)
@@ -137,7 +138,10 @@ public enum LootItem
                         addEnchantment(Enchantment.getById(i[0]), i[1]);
                     }
                 }
-                setItemMeta(meta);
+                if(durability)
+                {
+                    setDurability(DamageItem.damage(getDurability()));
+                }
             }
         };
     }
