@@ -15,7 +15,7 @@ public enum LootItem
 {
     //Material Amount ID Lore Name SpawnWithDamage
     WOODSWORD(Material.WOOD_SWORD, 1, (short) 0, "Good for poking zombies." , "Wooden Weapon", true),
-    WOODAXE(Material.WOOD_AXE, 1, (short) 0, "lore" , "Name", true),
+    WOODAXE(Material.WOOD_AXE, 1, (short) 0, "Fight wood with wood." , "Wooden Woodcutting Axe", true),
     STONESWORD(Material.STONE_SWORD, 1, (short) 0, "It's better than wood I guess.." , "Stone Weapon", true),
     STONEAXE(Material.STONE_AXE, 1, (short) 0, "May I axe you a question?" , "Stone Woodcutting Axe", true),
     LEATHERBOOTS(Material.LEATHER_BOOTS, 1, (short) 0, "Expensive tacky Italian leather shoes." , "Man Boots", true),
@@ -44,7 +44,7 @@ public enum LootItem
     CARROT(Material.CARROT_ITEM, 1, (short) 0, "Cawwots awe fow wabbits." , "Carrot", false),
     REDMUSHROOM(Material.RED_MUSHROOM, 1, (short) 0, "Maybe you will grow if you eat it!" , "Red Shroom", false),
     BROWNMUSHROOM(Material.BROWN_MUSHROOM, 1, (short) 0, "Looks, smells and tastes like dirt." , "Brown Shroom", false),
-    CHOCOLATE(Material.COCOA, 1, (short) 0, "Use this to make delicious cookies!" , "Chocolate Powder", false),
+    CHOCOLATE(Material.INK_SACK, 1, (short) 3, "Use this to make delicious cookies!" , "Chocolate Powder", false),
     CHICKEN(Material.RAW_CHICKEN, 1, (short) 0, "You can smell the salmonella.." , "Uncooked Chicken Meat", false),
     FISH(Material.RAW_FISH, 1, (short) 0, "Something's fishy." , "Fish.", false),
     WATERBOTTLE(Material.POTION, 1, (short) 0, "A bottle of water, good for drinking." , "Bottle Of Water", false),
