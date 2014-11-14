@@ -64,6 +64,12 @@ public class Loot {
             LootItem.STICK,
             LootItem.FLINT,
             LootItem.FEATHER,
+            LootItem.STICK,
+            LootItem.FLINT,
+            LootItem.FEATHER,
+            LootItem.STICK,
+            LootItem.FLINT,
+            LootItem.FEATHER,
             LootItem.WOODPICKAXE
             };
     public final static LootItem[] normalLoot =
