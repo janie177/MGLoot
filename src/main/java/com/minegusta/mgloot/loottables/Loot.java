@@ -2,7 +2,7 @@ package com.minegusta.mgloot.loottables;
 
 public class Loot {
 
-    public static LootItem[] defaultLoot =
+    public final static LootItem[] defaultLoot =
             {
             LootItem.WOODSWORD,
             LootItem.WOODAXE,
@@ -23,7 +23,7 @@ public class Loot {
     };
 
 
-    public static LootItem[] foodLoot =
+    public final static LootItem[] foodLoot =
             {
             LootItem.MELON,
             LootItem.POTATO,
@@ -51,7 +51,7 @@ public class Loot {
             LootItem.ZOMBIEMEAT
     };
 
-    public static LootItem[] toolLoot =
+    public final static LootItem[] toolLoot =
             {
             LootItem.BUTTON,
             LootItem.BUTTON,
@@ -65,7 +65,7 @@ public class Loot {
             LootItem.FEATHER,
             LootItem.WOODPICKAXE
             };
-    public static LootItem[] normalLoot =
+    public final static LootItem[] normalLoot =
             {
             LootItem.IRONSWORD_WEAK,
             LootItem.CHAINCHEST,
@@ -83,7 +83,7 @@ public class Loot {
             };
 
 
-    public static LootItem[] goodLoot =
+    public final static LootItem[] goodLoot =
             {
             LootItem.IRONSWORD_WEAK,
             LootItem.SMOKEGRENADE,
@@ -123,7 +123,7 @@ public class Loot {
             LootItem.BOW_NORMAL_2,
             LootItem.GRENADE,
             };
-    public static LootItem[] ultraLoot =
+    public final static LootItem[] ultraLoot =
             {
             LootItem.DIAMONDSWORD,
             LootItem.GRENADE,
@@ -144,7 +144,7 @@ public class Loot {
             LootItem.DIAMOND,
             LootItem.SMOKEGRENADE
             };
-    public static LootItem[] healingLoot =
+    public final static LootItem[] healingLoot =
             {
             LootItem.HEALINGPOTION_1,
             LootItem.HEALINGPOTION_1,
