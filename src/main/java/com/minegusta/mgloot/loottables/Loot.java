@@ -54,8 +54,12 @@ public class Loot {
     public static LootItem[] toolLoot =
             {
             LootItem.BUTTON,
+            LootItem.BUTTON,
             LootItem.WOODHOE,
             LootItem.WOODSPADE,
+            LootItem.STICK,
+            LootItem.FLINT,
+            LootItem.FEATHER,
             LootItem.STICK,
             LootItem.FLINT,
             LootItem.FEATHER,
