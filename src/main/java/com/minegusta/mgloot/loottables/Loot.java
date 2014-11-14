@@ -15,6 +15,7 @@ public class Loot {
             LootItem.SNOWBALL,
             LootItem.BANDAGE,
             LootItem.EMPTYBOTTLE,
+            LootItem.SHEARS,
             LootItem.ARROW_2,
             LootItem.BOW_WEAK,
             LootItem.BOWL,
