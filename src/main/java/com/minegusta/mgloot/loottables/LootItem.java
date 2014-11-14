@@ -20,6 +20,7 @@ public enum LootItem
     STONEAXE(Material.STONE_AXE, 1, (short) 0, "May I axe you a question?" , "Stone Woodcutting Axe", true),
     LEATHERBOOTS(Material.LEATHER_BOOTS, 1, (short) 0, "Expensive tacky Italian leather shoes." , "Man Boots", true),
     LEATHERCHEST(Material.LEATHER_CHESTPLATE, 1, (short) 0, "This will keep you warm." , "Leather ChestPlate", true),
+    APPLE(Material.APPLE, 1, (short) 0, "A tasty red apple unless your texturepack changes it.", "Red Apple", false),
     LEATHERLEGS(Material.LEATHER_LEGGINGS, 1, (short) 0, "Man Pants." , "Leather Pants", true),
     LEATHERHELM(Material.LEATHER_HELMET, 1, (short) 0, "This will hide your tacky hair." , "Leather Cap", true),
     SNOWBALL(Material.SNOW_BALL, 1, (short) 0, "Maybe you should throw this away." , "Ball Of Rubbish", false),
