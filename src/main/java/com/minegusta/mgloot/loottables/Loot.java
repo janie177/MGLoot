@@ -34,7 +34,6 @@ public class Loot {
             LootItem.MILK,
             LootItem.FISH,
             LootItem.CHICKEN,
-            LootItem.CHICKEN,
             LootItem.CHOCOLATE,
             LootItem.GRAIN,
             LootItem.GRAIN,
@@ -54,6 +53,7 @@ public class Loot {
 
     public final static LootItem[] toolLoot =
             {
+            LootItem.BUTTON,
             LootItem.BUTTON,
             LootItem.BUTTON,
             LootItem.WOODHOE,
