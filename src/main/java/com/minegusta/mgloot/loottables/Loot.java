@@ -142,11 +142,13 @@ public class Loot {
             LootItem.LEATHERCHEST,
             LootItem.LEATHERLEGS,
             LootItem.LEATHERHELM,
-            LootItem.IRONHELM_WEAK,
-            LootItem.IRONBOOTS_WEAK,
             LootItem.ARROW_3,
             LootItem.CHAINBOOTS,
-            LootItem.CHAINHELM
+            LootItem.CHAINHELM,
+            LootItem.LEATHERBOOTS,
+            LootItem.LEATHERCHEST,
+            LootItem.LEATHERLEGS,
+            LootItem.LEATHERHELM
             };
 
 
