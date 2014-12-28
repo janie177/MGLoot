@@ -106,6 +106,10 @@ public class ChestListener implements Listener
                 b.getWorld().spigot().playEffect(l, Effect.LARGE_SMOKE);
                 b.getWorld().playSound(l, Sound.CHICKEN_EGG_POP, 1, 1);
 
+                //Give a player credits
+                p.sendMessage(ChatColor.YELLOW + "You earned " + ChatColor.LIGHT_PURPLE + "2" + ChatColor.GOLD + " credits.");
+                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "addcredits " + p.getName() + " " + 2);
+
 
                 //Start a chest respawn timer
                 ChestRespawn respawn = new ChestRespawn(l, respawnTime);
