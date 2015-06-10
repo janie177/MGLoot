@@ -8,6 +8,7 @@ import org.bukkit.Material;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
+import org.bukkit.event.player.PlayerJoinEvent;
 
 public class ChestRespawn
 {
@@ -23,9 +24,7 @@ public class ChestRespawn
 
     public void startRespawn()
     {
-        Bukkit.getScheduler().scheduleSyncDelayedTask(Main.PLUGIN, new Runnable() {
-            @Override
-            public void run()
+        Bukkit.getScheduler().scheduleSyncDelayedTask(Main.PLUGIN, () -> {
             {
                 if(!hasPlayersNear())
                 {
@@ -38,17 +37,6 @@ public class ChestRespawn
 
     private boolean hasPlayersNear()
     {
-        Entity temp = l.getWorld().spawnEntity(l, EntityType.EXPERIENCE_ORB);
-        boolean players = false;
-        for(Entity ent : temp.getNearbyEntities(12,12,12))
-        {
-            if(ent instanceof Player)
-            {
-                ((Player) ent).sendMessage(ChatColor.RED + "A chest spawn was blocked because you were too near.");
-                players = true;
-            }
-        }
-        temp.remove();
-        return players;
+        return l.getWorld().getLivingEntities().stream().filter(ent -> ent.getLocation().distance(l) < 12).anyMatch(ent -> ent instanceof Player);
     }
 }
