@@ -2,7 +2,6 @@ package com.minegusta.mgloot.loottables;
 
 import com.google.common.collect.Lists;
 import com.minegusta.mgloot.util.DamageItem;
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;

@@ -1,7 +1,5 @@
 package com.minegusta.mgloot.util;
 
-import org.bukkit.Bukkit;
-
 public class DamageItem
 {
     /**

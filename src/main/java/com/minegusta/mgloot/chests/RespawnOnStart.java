@@ -10,13 +10,11 @@ public class RespawnOnStart
 {
     public static void respawn()
     {
-        Bukkit.getScheduler().scheduleSyncDelayedTask(Main.PLUGIN, new Runnable() {
-            @Override
-            public void run() {
-                for(Location l : ConfigHandler.getChestLocations())
-                {
-                    l.getBlock().setType(Material.CHEST);
-                }
+        Bukkit.getScheduler().scheduleSyncDelayedTask(Main.PLUGIN, ()-> {
+            if(ConfigHandler.getChestLocations() == null) return;
+            for(Location l : ConfigHandler.getChestLocations())
+            {
+                l.getBlock().setType(Material.CHEST);
             }
         }, 20 * 30);
     }
