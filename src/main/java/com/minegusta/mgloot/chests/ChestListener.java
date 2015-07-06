@@ -1,5 +1,7 @@
 package com.minegusta.mgloot.chests;
 
+import com.minegusta.mgapocalypse.MGApocalypse;
+import com.minegusta.mgapocalypse.files.MGPlayer;
 import com.minegusta.mgloot.configfiles.ConfigHandler;
 import com.minegusta.mgloot.loottables.Loot;
 import com.minegusta.mgloot.loottables.LootItem;
@@ -24,6 +26,7 @@ public class ChestListener implements Listener
 
 
         Player p = e.getPlayer();
+        MGPlayer mgp = MGApocalypse.getMGPlayer(p);
 
         if(e.hasBlock() && e.getClickedBlock().getType() == Material.CHEST)
         {
@@ -55,42 +58,49 @@ public class ChestListener implements Listener
                         maxAmount = 2;
                         table = Loot.ultraLoot;
                         respawnTime = 600;
+                        mgp.addDiamondChestsLooted(1);
                     }
                     break;
                     case EMERALD_BLOCK: {
                         maxAmount = 3;
                         table = Loot.goodLoot;
                         respawnTime = 450;
+                        mgp.addEmeraldChestsLooted(1);
                     }
                     break;
                     case IRON_BLOCK: {
                         maxAmount = 4;
                         table = Loot.normalLoot;
                         respawnTime = 300;
+                        mgp.addIronChestsLooted(1);
                     }
                     break;
                     case HAY_BLOCK: {
                         maxAmount = 4;
                         table = Loot.foodLoot;
                         respawnTime = 160;
+                        mgp.addChestsLooted(1);
                     }
                     break;
                     case CLAY: {
                         maxAmount = 2;
                         table = Loot.toolLoot;
                         respawnTime = 180;
+                        mgp.addChestsLooted(1);
                     }
                     break;
                     case REDSTONE_BLOCK: {
                         maxAmount = 3;
                         table = Loot.healingLoot;
                         respawnTime = 250;
+                        mgp.addChestsLooted(1);
                     }
                     break;
                     default: {
                         maxAmount = 3;
                         table = Loot.defaultLoot;
                         respawnTime = 160;
+                        mgp.addChestsLooted(1);
                     }
                     break;
                 }
