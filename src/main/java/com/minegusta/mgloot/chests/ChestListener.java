@@ -119,6 +119,7 @@ public class ChestListener implements Listener
                 //Give a player credits
                 p.sendMessage(ChatColor.YELLOW + "You earned " + ChatColor.LIGHT_PURPLE + "2" + ChatColor.GOLD + " credits.");
                 Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "addcredits " + p.getName() + " " + 2);
+                mgp.addEarnedcredits(2);
 
 
                 //Start a chest respawn timer
