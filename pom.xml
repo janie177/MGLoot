@@ -40,6 +40,13 @@
             <artifactId>spigot-api</artifactId>
             <version>${spigot.version}</version>
         </dependency>
+        <dependency>
+            <groupId>MGApocalypse</groupId>
+            <artifactId>com.minegusta</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/depends/MGApocalypse.jar</systemPath>
+        </dependency>
     </dependencies>
 
     <build>

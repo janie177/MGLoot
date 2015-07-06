@@ -1,4 +1,5 @@
 name: MGLoot
 author: janie177
 version: ${project.version}
+depend: [MGApocalypse]
 main: com.minegusta.mgloot.Main
