@@ -2,10 +2,12 @@ package com.minegusta.mgloot.chests;
 
 import com.minegusta.mgapocalypse.MGApocalypse;
 import com.minegusta.mgapocalypse.files.MGPlayer;
+import com.minegusta.mgapocalypse.perks.Perk;
 import com.minegusta.mgloot.configfiles.ConfigHandler;
 import com.minegusta.mgloot.loottables.Loot;
 import com.minegusta.mgloot.loottables.LootItem;
 import com.minegusta.mgloot.managers.LootManager;
+import com.minegusta.mgloot.util.RandomNumber;
 import com.minegusta.mgloot.util.StringLocConverter;
 import org.bukkit.*;
 import org.bukkit.block.Block;
@@ -108,6 +110,15 @@ public class ChestListener implements Listener
                 LootManager manager = new LootManager(table, maxAmount);
                 for (ItemStack is : manager.getLoot()) {
                     l.getWorld().dropItemNaturally(l, is);
+                }
+
+                //Spawn extra loot if the perk is bough
+                int level = mgp.getPerkLevel(Perk.LOOTER);
+
+                if(level != 0 && RandomNumber.get(100) <= level * 3)
+                {
+                    LootManager man = new LootManager(table, 1);
+                    l.getWorld().dropItemNaturally(l, man.getLoot()[0]);
                 }
 
                 //Make the chest dissapear
