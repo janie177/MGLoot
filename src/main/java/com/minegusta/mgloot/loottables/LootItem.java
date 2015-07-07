@@ -2,12 +2,16 @@ package com.minegusta.mgloot.loottables;
 
 import com.google.common.collect.Lists;
 import com.minegusta.mgloot.util.DamageItem;
+import com.minegusta.mgloot.util.RandomNumber;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public enum LootItem
@@ -150,5 +154,13 @@ public enum LootItem
                 }
             }
         };
+    }
+
+    private static final List<LootItem> items = Collections.unmodifiableList(Arrays.asList(LootItem.values()));
+
+    public static ItemStack getRandom()
+    {
+        int number = RandomNumber.get(items.size()) - 1;
+        return items.get(number).build();
     }
 }
