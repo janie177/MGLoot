@@ -10,11 +10,12 @@ import java.util.List;
 public class ConfigHandler
 {
     private static final List<String> worlds = config().getStringList("enabled_worlds");
+    private static List<String> chests = getChests();
 
     /**
      * The path to save the chests in.
      */
-    private static String path = "chests";
+    private static String path = "savedchests";
 
     /**
      * Getting the config
@@ -25,13 +26,24 @@ public class ConfigHandler
         return DefaultConfig.getConfig();
     }
 
+    public static boolean containsChest(Location l)
+    {
+        return chests.contains(StringLocConverter.locationToString(l));
+    }
+
     /**
      * Get all chests as a String list. Convert it using StringLocConverter.
      * @return Stringlist of chests.
      */
     public static List<String> getChests()
     {
-        return config().getStringList(path);
+        List<String> locations = Lists.newArrayList();
+
+        config().getConfigurationSection(path).getKeys(false).stream().forEach(locations::add);
+
+        return locations;
+
+        //return config().getStringList(path);
     }
 
     /**
@@ -40,6 +52,13 @@ public class ConfigHandler
      */
     public static List<Location> getChestLocations()
     {
+        List<Location> locations = Lists.newArrayList();
+
+        config().getConfigurationSection(path).getKeys(false).stream().forEach(s -> locations.add(StringLocConverter.stringToLocation(s)));
+
+        return locations;
+
+        /*
         if(config().isSet(path))
         {
             List<Location> locations = Lists.newArrayList();
@@ -54,6 +73,7 @@ public class ConfigHandler
             return locations;
         }
         else return null;
+        */
     }
 
     /**
@@ -64,10 +84,28 @@ public class ConfigHandler
     public static boolean toggleChest(Location l)
     {
         boolean added = true;
+        String chest = StringLocConverter.locationToString(l);
+        if(config().isSet(path + "." + chest))
+        {
+            config().set(path + "." + chest, null);
+            added = false;
+        }
+        else
+        {
+            config().set(path + "." + chest, true);
+        }
+        DefaultConfig.saveConfig();
+
+        chests = getChests();
+
+        return added;
+
+        /*
+        boolean added = true;
         List<String> chests = getChests();
         String chest = StringLocConverter.locationToString(l);
 
-        if(chests.contains(chest))
+        if(config().isSet(path + "." + chest))
         {
             chests.remove(chest);
             added = false;
@@ -79,6 +117,7 @@ public class ConfigHandler
         config().set(path, chests);
         DefaultConfig.saveConfig();
         return added;
+        */
     }
 
     /**
@@ -91,4 +130,26 @@ public class ConfigHandler
         return worlds.contains(worldName);
     }
 
+    public static void convert()
+    {
+        if(config().getBoolean("convert", true))
+        {
+            config().set("convert", false);
+            DefaultConfig.saveConfig();
+
+            List<String> locations = config().getStringList("chests");
+
+            for(String s : locations)
+            {
+                config().set(path + "." + s, true);
+            }
+
+            config().set("chests", null);
+
+            chests = getChests();
+
+            DefaultConfig.saveConfig();
+
+        }
+    }
 }

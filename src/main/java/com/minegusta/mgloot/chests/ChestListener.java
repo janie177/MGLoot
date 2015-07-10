@@ -19,6 +19,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 
+import java.util.List;
+
 public class ChestListener implements Listener
 {
     @EventHandler(priority = EventPriority.LOWEST)
@@ -48,7 +50,7 @@ public class ChestListener implements Listener
                     p.sendMessage(ChatColor.GREEN + "You have " + ChatColor.DARK_RED + "UNREGISTERED" + ChatColor.GREEN + " this chest.");
                 }
 
-            } else if(ConfigHandler.getChests().contains(StringLocConverter.locationToString(l))){
+            } else if(ConfigHandler.containsChest(l)){
 
                 int maxAmount;
                 LootItem[] table;

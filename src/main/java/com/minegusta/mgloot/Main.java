@@ -2,6 +2,7 @@ package com.minegusta.mgloot;
 
 import com.minegusta.mgloot.chests.ChestListener;
 import com.minegusta.mgloot.chests.RespawnOnStart;
+import com.minegusta.mgloot.configfiles.ConfigHandler;
 import com.minegusta.mgloot.configfiles.DefaultConfig;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
@@ -21,6 +22,8 @@ public class Main extends JavaPlugin
 
         //Register listeners.
         Bukkit.getPluginManager().registerEvents(new ChestListener(), this);
+
+        ConfigHandler.convert();
 
         //Respawn all chests.
         RespawnOnStart.respawn();
