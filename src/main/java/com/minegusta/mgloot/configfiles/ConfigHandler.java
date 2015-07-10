@@ -39,6 +39,8 @@ public class ConfigHandler
     {
         List<String> locations = Lists.newArrayList();
 
+        if(!config().isSet(path))return Lists.newArrayList();
+
         config().getConfigurationSection(path).getKeys(false).stream().forEach(locations::add);
 
         return locations;
