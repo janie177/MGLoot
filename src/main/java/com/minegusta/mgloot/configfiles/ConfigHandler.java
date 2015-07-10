@@ -2,6 +2,7 @@ package com.minegusta.mgloot.configfiles;
 
 import com.google.common.collect.Lists;
 import com.minegusta.mgloot.util.StringLocConverter;
+import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.configuration.file.FileConfiguration;
 
@@ -11,11 +12,7 @@ public class ConfigHandler
 {
     private static final List<String> worlds = config().getStringList("enabled_worlds");
     private static List<String> chests = getChests();
-
-    /**
-     * The path to save the chests in.
-     */
-    private static String path = "savedchests";
+    public static final String path = "locations";
 
     /**
      * Getting the config
@@ -143,7 +140,8 @@ public class ConfigHandler
 
             for(String s : locations)
             {
-                config().set(path + "." + s, true);
+                String converted = s.replace(",", "&").replace(".0", "");
+                config().set(path + "." + converted, true);
             }
 
             config().set("chests", null);

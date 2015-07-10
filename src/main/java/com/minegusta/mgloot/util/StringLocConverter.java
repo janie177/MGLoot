@@ -9,15 +9,15 @@ public class StringLocConverter
 
     public static String locationToString(Location l)
     {
-        return Double.toString(l.getX()) + "," + Double.toString(l.getY()) + "," + Double.toString(l.getZ()) + "," + l.getWorld().getName();
+        return Integer.toString((int)l.getX()) + "&" + Integer.toString((int)l.getY()) + "&" + Integer.toString((int)l.getZ()) + "&" + l.getWorld().getName();
     }
 
     public static Location stringToLocation(String s)
     {
-        String[] split = s.split(",");
-        double x = Double.parseDouble(split[0]);
-        double y = Double.parseDouble(split[1]);
-        double z = Double.parseDouble(split[2]);
+        String[] split = s.split("&");
+        int x = (int) Double.parseDouble(split[0]);
+        int y = (int) Double.parseDouble(split[1]);
+        int z = (int) Double.parseDouble(split[2]);
         World w = null;
 
         try{

@@ -28,7 +28,6 @@ public class ChestListener implements Listener
     {
         if(!ConfigHandler.isInWorld(e.getPlayer().getWorld().getName()))return;
 
-
         Player p = e.getPlayer();
         MGPlayer mgp = MGApocalypse.getMGPlayer(p);
 
