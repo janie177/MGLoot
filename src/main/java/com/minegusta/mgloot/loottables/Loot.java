@@ -151,6 +151,37 @@ public class Loot {
             LootItem.LEATHERHELM
             };
 
+        public final static LootItem[] betterLoot =
+                {
+                        LootItem.IRONSWORD_WEAK,
+                        LootItem.IRONSWORD_WEAK,
+                        LootItem.CHAINCHEST,
+                        LootItem.CHAINLEGS,
+                        LootItem.CHAINCHEST,
+                        LootItem.CHAINLEGS,
+                        LootItem.GOLDBOOTS,
+                        LootItem.GOLDCHEST,
+                        LootItem.GOLDLEGS,
+                        LootItem.GOLDHELM,
+                        LootItem.BOW_WEAK,
+                        LootItem.WOODSWORD,
+                        LootItem.WOODAXE,
+                        LootItem.STONESWORD,
+                        LootItem.STONEAXE,
+                        LootItem.LEATHERBOOTS,
+                        LootItem.LEATHERCHEST,
+                        LootItem.LEATHERLEGS,
+                        LootItem.LEATHERHELM,
+                        LootItem.ARROW_3,
+                        LootItem.CHAINBOOTS,
+                        LootItem.CHAINHELM,
+                        LootItem.CHAINBOOTS,
+                        LootItem.CHAINHELM,
+                        LootItem.IRONBOOTS_WEAK,
+                        LootItem.IRONBAR,
+                        LootItem.SMOKEGRENADE,
+                        LootItem.IRONHELM_WEAK,
+                };
 
     public final static LootItem[] goodLoot =
             {

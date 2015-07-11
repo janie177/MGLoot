@@ -75,7 +75,14 @@ public class ChestListener implements Listener
                         maxAmount = 4;
                         table = Loot.normalLoot;
                         respawnTime = 300;
-                        mgp.addIronChestsLooted(1);
+                        mgp.addMetalChestsLooted(1);
+                    }
+                    break;
+                    case GOLD_BLOCK: {
+                        maxAmount = 4;
+                        table = Loot.betterLoot;
+                        respawnTime = 400;
+                        mgp.addMetalChestsLooted(1);
                     }
                     break;
                     case HAY_BLOCK: {
