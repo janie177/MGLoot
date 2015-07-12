@@ -9,10 +9,7 @@ import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public enum LootItem
 {
@@ -162,5 +159,20 @@ public enum LootItem
     {
         int number = RandomNumber.get(items.size()) - 1;
         return items.get(number).build();
+    }
+
+    public static List<ItemStack> getRandom(int amount, LootItem[]... lootitems)
+    {
+        Random rand = new Random();
+        int index = rand.nextInt(lootitems.length);
+
+        List<ItemStack> is = Lists.newArrayList();
+
+        for(int i = 0; i < amount; i++)
+        {
+            int item = rand.nextInt(lootitems[index].length);
+            is.add(lootitems[index][item].build());
+        }
+        return is;
     }
 }
