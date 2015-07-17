@@ -89,7 +89,6 @@ public class Loot {
             LootItem.MELON,
             LootItem.APPLE,
             LootItem.MILK,
-            LootItem.MILK,
             LootItem.FISH,
             LootItem.CHICKEN,
             LootItem.CHOCOLATE,
