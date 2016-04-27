@@ -37,7 +37,7 @@ public class ChestListener implements Listener
             Material m = b.getRelative(BlockFace.DOWN).getType();
             Location l = e.getClickedBlock().getLocation();
 
-            if(p.isOp() && e.getPlayer().getItemInHand() != null && e.getPlayer().getItemInHand().getType().equals(Material.BLAZE_ROD))
+            if(p.isOp() && e.getPlayer().getInventory().getItemInMainHand() != null && e.getPlayer().getInventory().getItemInMainHand().getType().equals(Material.BLAZE_ROD))
             {
                 boolean enabled = ConfigHandler.toggleChest(l);
                 if(enabled)
