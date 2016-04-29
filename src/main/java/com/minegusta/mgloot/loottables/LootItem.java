@@ -92,7 +92,7 @@ public enum LootItem
     IRONBAR(Material.IRON_INGOT, 1, (short) 0, "This can be used to craft or repair." , "Iron Bar", false),
     DIAMONDSWORD(Material.DIAMOND_SWORD, 1, (short) 0, "The strongest sword around." , "Diamond Sword", true),
     DIAMOND(Material.DIAMOND, 1, (short) 0, "A rare crafting material." , "Shiny Diamond", false),
-    HEALINGPOTION_1(Material.POTION, 1, PotionType.STRENGTH, true, true, "It's not a placebo I swear!" , "Potion Of Healing", false),
+    HEALINGPOTION_1(Material.POTION, 1, PotionType.STRENGTH, true, false, "It's not a placebo I swear!" , "Potion Of Healing", false),
     HEALINGPOTION_2(Material.POTION, 1, PotionType.INSTANT_HEAL, false, true, "It's not a placebo I swear!" , "Potion Of Healing", false),
     HEALINGPOTION_3(Material.SPLASH_POTION, 1, PotionType.INSTANT_HEAL, false, false, "It's not a placebo I swear!" , "Potion Of Healing", false),
     HEALINGPOTION_4(Material.SPLASH_POTION, 1, PotionType.INSTANT_HEAL, false, true, "It's not a placebo I swear!" , "Potion Of Healing", false),
@@ -170,6 +170,11 @@ public enum LootItem
                 if(type != null)
                 {
                     PotionMeta potion = (PotionMeta) this.getItemMeta();
+
+                    if(extended && amplified)
+                    {
+                        extended = false;
+                    }
 
                     PotionData data = new PotionData(type, extended, amplified);
                     potion.setBasePotionData(data);
