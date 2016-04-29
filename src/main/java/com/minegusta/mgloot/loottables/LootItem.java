@@ -8,6 +8,11 @@ import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.inventory.meta.PotionMeta;
+import org.bukkit.potion.Potion;
+import org.bukkit.potion.PotionData;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionType;
 
 import java.util.*;
 
@@ -87,13 +92,14 @@ public enum LootItem
     IRONBAR(Material.IRON_INGOT, 1, (short) 0, "This can be used to craft or repair." , "Iron Bar", false),
     DIAMONDSWORD(Material.DIAMOND_SWORD, 1, (short) 0, "The strongest sword around." , "Diamond Sword", true),
     DIAMOND(Material.DIAMOND, 1, (short) 0, "A rare crafting material." , "Shiny Diamond", false),
-    HEALINGPOTION_1(Material.POTION, 1, (short) 8197, "It's not a placebo I swear!" , "Potion Of Healing", false),
-    HEALINGPOTION_2(Material.POTION, 1, (short) 8229, "It's not a placebo I swear!" , "Potion Of Healing", false),
-    HEALINGPOTION_3(Material.POTION, 1, (short) 16389, "It's not a placebo I swear!" , "Potion Of Healing", false),
-    HEALINGPOTION_4(Material.POTION, 1, (short) 16421, "It's not a placebo I swear!" , "Potion Of Healing", false),
-    HEALINGPOTION_5(Material.POTION, 1, (short) 8193, "It's not a placebo I swear!" , "Potion Of Healing", false),
-    HEALINGPOTION_6(Material.POTION, 1, (short) 16385, "It's not a placebo I swear!" , "Potion Of Healing", false),
-    HEALINGPOTION_7(Material.POTION, 1, (short) 8225, "It's not a placebo I swear!" , "Potion Of Healing", false);
+    HEALINGPOTION_1(Material.POTION, 1, PotionType.STRENGTH, true, true, "It's not a placebo I swear!" , "Potion Of Healing", false),
+    HEALINGPOTION_2(Material.POTION, 1, PotionType.INSTANT_HEAL, false, true, "It's not a placebo I swear!" , "Potion Of Healing", false),
+    HEALINGPOTION_3(Material.SPLASH_POTION, 1, PotionType.INSTANT_HEAL, false, false, "It's not a placebo I swear!" , "Potion Of Healing", false),
+    HEALINGPOTION_4(Material.SPLASH_POTION, 1, PotionType.INSTANT_HEAL, false, true, "It's not a placebo I swear!" , "Potion Of Healing", false),
+    HEALINGPOTION_5(Material.POTION, 1, PotionType.REGEN, false, false, "It's not a placebo I swear!" , "Potion Of Healing", false),
+    HEALINGPOTION_6(Material.SPLASH_POTION, 1, PotionType.REGEN, true, false, "It's not a placebo I swear!" , "Potion Of Healing", false),
+    HEALINGPOTION_7(Material.POTION, 1, PotionType.REGEN, false, true, "It's not a placebo I swear!" , "Potion Of Healing", false),
+    HEALINGPOTION_8(Material.SPLASH_POTION, 1, PotionType.REGEN, false, false, "It's not a placebo I swear!" , "Potion Of Healing", false);
 
 
     private Material m;
@@ -103,6 +109,9 @@ public enum LootItem
     private String name;
     private boolean durability;
     private int[][] enchantments = null;
+    private PotionType type = null;
+    private boolean amplified = false;
+    private boolean extended = false;
 
 
 
@@ -114,6 +123,19 @@ public enum LootItem
         this. lore = lore;
         this.name = name;
         this.durability = durability;
+    }
+
+    private LootItem(Material m, int amount, PotionType type, boolean extended, boolean amplified, String lore, String name, boolean durability)
+    {
+        this.m = m;
+        this.amount = amount;
+        this.damage = 0;
+        this. lore = lore;
+        this.name = name;
+        this.durability = durability;
+        this.extended = extended;
+        this.amplified = amplified;
+        this.type = type;
     }
 
     private LootItem(Material m, int amount, short damage, String lore, String name, boolean durability, int[][] enchantments)
@@ -144,6 +166,15 @@ public enum LootItem
                     {
                         addEnchantment(Enchantment.getById(i[0]), i[1]);
                     }
+                }
+                if(type != null)
+                {
+                    PotionMeta potion = (PotionMeta) this.getItemMeta();
+
+                    PotionData data = new PotionData(type, extended, amplified);
+                    potion.setBasePotionData(data);
+
+                    this.setItemMeta(potion);
                 }
                 if(durability)
                 {

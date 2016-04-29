@@ -262,6 +262,7 @@ public class Loot {
             LootItem.HEALINGPOTION_5,
             LootItem.HEALINGPOTION_6,
             LootItem.HEALINGPOTION_7,
+            LootItem.HEALINGPOTION_8,
             LootItem.BANDAGE
             };
 }
