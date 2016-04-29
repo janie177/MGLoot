@@ -136,9 +136,9 @@ public class ChestListener implements Listener
                 b.getWorld().playSound(l, Sound.ENTITY_CHICKEN_EGG, 1, 1);
 
                 //Give a player credits
-                p.sendMessage(ChatColor.YELLOW + "You earned " + ChatColor.LIGHT_PURPLE + "2" + ChatColor.GOLD + " credit.");
-                Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), "addcredit " + p.getName() + " " + 2);
-                Bukkit.getLogger().info("Adding 2 credits to " + p.getName());
+                p.sendMessage(ChatColor.YELLOW + "You earned " + ChatColor.LIGHT_PURPLE + "2" + ChatColor.GOLD + " credits.");
+                Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), "addcredits " + p.getName() + " " + 2);
+                Bukkit.getLogger().info("Adding 2 credits to " + p.getName() + ".");
                 mgp.addEarnedcredits(2);
 
 
