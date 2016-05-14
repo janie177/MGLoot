@@ -59,7 +59,7 @@ public enum LootItem
     CHICKEN(Material.RAW_CHICKEN, 1, (short) 0, "You can smell the salmonella.." , "Uncooked Chicken Meat", false),
     MILK(Material.MILK_BUCKET, 1, (short) 0, "Healthy fresh milk. Nom!" , "Fresh Milk", false),
     FISH(Material.RAW_FISH, 1, (short) 0, "Something's fishy." , "Fish", false),
-    WATERBOTTLE(Material.POTION, 1, (short) 0, "A bottle of water, good for drinking." , "Bottle Of Water", false),
+    WATERBOTTLE(Material.POTION, 1, PotionType.WATER, false, false, "A bottle of water, good for drinking." , "Bottle Of Water", false),
     GRAIN(Material.WHEAT, 1, (short) 0, "Can be used to cook various foods." , "Grain", false),
     COOKIE(Material.COOKIE, 1, (short) 0, "Because an apocalypse without cookies would suck." , "Chocolate Chip Cookie", false),
     ZOMBIEMEAT(Material.ROTTEN_FLESH, 1, (short) 0, "It's basically human flesh, but with more worms." , "Zombie Meat", false),
