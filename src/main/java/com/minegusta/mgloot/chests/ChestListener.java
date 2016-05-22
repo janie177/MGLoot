@@ -114,6 +114,13 @@ public class ChestListener implements Listener
                     }
                     break;
                 }
+
+                //Make the chest dissapear
+                b.setType(Material.AIR);
+                b.getWorld().spigot().playEffect(l, Effect.MOBSPAWNER_FLAMES);
+                b.getWorld().spigot().playEffect(l, Effect.LARGE_SMOKE);
+                b.getWorld().playSound(l, Sound.ENTITY_CHICKEN_EGG, 1, 1);
+
                 //Spawn the loot
                 LootManager manager = new LootManager(table, maxAmount);
                 for (ItemStack is : manager.getLoot()) {
@@ -128,12 +135,6 @@ public class ChestListener implements Listener
                     LootManager man = new LootManager(table, 1);
                     l.getWorld().dropItemNaturally(l, man.getLoot()[0]);
                 }
-
-                //Make the chest dissapear
-                b.setType(Material.AIR);
-                b.getWorld().spigot().playEffect(l, Effect.MOBSPAWNER_FLAMES);
-                b.getWorld().spigot().playEffect(l, Effect.LARGE_SMOKE);
-                b.getWorld().playSound(l, Sound.ENTITY_CHICKEN_EGG, 1, 1);
 
                 //Give a player credits
                 p.sendMessage(ChatColor.YELLOW + "You earned " + ChatColor.LIGHT_PURPLE + "2" + ChatColor.GOLD + " credits.");
