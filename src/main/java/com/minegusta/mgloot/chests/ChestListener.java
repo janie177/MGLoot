@@ -3,6 +3,7 @@ package com.minegusta.mgloot.chests;
 import com.minegusta.mgapocalypse.MGApocalypse;
 import com.minegusta.mgapocalypse.files.MGPlayer;
 import com.minegusta.mgapocalypse.perks.Perk;
+import com.minegusta.mgloot.Main;
 import com.minegusta.mgloot.configfiles.ConfigHandler;
 import com.minegusta.mgloot.loottables.Loot;
 import com.minegusta.mgloot.loottables.LootItem;
@@ -121,20 +122,24 @@ public class ChestListener implements Listener
                 b.getWorld().spigot().playEffect(l, Effect.LARGE_SMOKE);
                 b.getWorld().playSound(l, Sound.ENTITY_CHICKEN_EGG, 1, 1);
 
-                //Spawn the loot
-                LootManager manager = new LootManager(table, maxAmount);
-                for (ItemStack is : manager.getLoot()) {
-                    l.getWorld().dropItemNaturally(l, is);
-                }
-
-                //Spawn extra loot if the perk is bough
                 int level = mgp.getPerkLevel(Perk.LOOTER);
 
-                if(level != 0 && RandomNumber.get(100) <= level * 3)
-                {
-                    LootManager man = new LootManager(table, 1);
-                    l.getWorld().dropItemNaturally(l, man.getLoot()[0]);
-                }
+                //Spawn the loot
+                Bukkit.getScheduler().scheduleSyncDelayedTask(Main.PLUGIN, ()-> {
+                    LootManager manager = new LootManager(table, maxAmount);
+                    for (ItemStack is : manager.getLoot()) {
+                        l.getWorld().dropItemNaturally(l, is);
+                    }
+
+                    //Spawn extra loot if the perk is bough
+
+                    if(level != 0 && RandomNumber.get(100) <= level * 3)
+                    {
+                        LootManager man = new LootManager(table, 1);
+                        l.getWorld().dropItemNaturally(l, man.getLoot()[0]);
+                    }
+                }, 6);
+
 
                 //Give a player credits
                 p.sendMessage(ChatColor.YELLOW + "You earned " + ChatColor.LIGHT_PURPLE + "2" + ChatColor.GOLD + " credits.");
