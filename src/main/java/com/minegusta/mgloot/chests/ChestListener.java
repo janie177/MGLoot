@@ -128,7 +128,7 @@ public class ChestListener implements Listener
                 Bukkit.getScheduler().scheduleSyncDelayedTask(Main.PLUGIN, ()-> {
                     LootManager manager = new LootManager(table, maxAmount);
                     for (ItemStack is : manager.getLoot()) {
-                        l.getWorld().dropItemNaturally(l, is);
+                        l.getWorld().dropItemNaturally(l.clone().add(0.5, 0.5, 0.5), is);
                     }
 
                     //Spawn extra loot if the perk is bough
@@ -136,7 +136,7 @@ public class ChestListener implements Listener
                     if(level != 0 && RandomNumber.get(100) <= level * 3)
                     {
                         LootManager man = new LootManager(table, 1);
-                        l.getWorld().dropItemNaturally(l, man.getLoot()[0]);
+                        l.getWorld().dropItemNaturally(l.clone().add(0.5, 0.5, 0.5), man.getLoot()[0]);
                     }
                 }, 6);
 
